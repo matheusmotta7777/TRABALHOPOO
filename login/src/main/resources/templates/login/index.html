@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" th:href="@{/css/stylesInitPage.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<!--<body>
+<h1>Tela de Login</h1>
+<p>Faça o seu login.</p>
+<form th:action="@{/login}" method="post" th:object="${user}">
+    <input type="text" name="username" id="username" placeholder="username">
+    <input type="password" name="password" id="password" placeholder="password">
+    <button type="submit">Login</button>
+</form>
+<div th:if="${param.error}">Usuário ou senha incorretos</div>
+</body>-->
+<body>
+<div class="header">
+    <a href="@{/home}">Cassino</a>
+    <a href="@{/jogos}">Jogos</a>
+    <a href="indexhome.html">Saque</a>
+    <a href="indexhome.html">Depósito</a>
+    <a href="indexhome.html">Relatório</a>
+    <div class="right">
+        <a href="indexhome.html">Entrar</a>
+        <a href="indexhome.html">Registrar</a>
+    </div>
+</div>
+<div class="main-content">
+    <h1>UNIBET69</h1>
+    <div class="login-box">
+        <!--<label for="username">Login</label>
+        <input type="text" id="username" placeholder="Nome Ou CPF">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite sua Senha">
+        <button>Entrar</button>-->
+        <form th:action="@{/login}" method="post" th:object="${user}">
+            <input type="text" name="username" id="username" placeholder="username">
+            <input type="password" name="password" id="password" placeholder="password">
+            <button type="submit">Login</button>
+        </form>
+        <div th:if="${param.error}">Usuário ou senha incorretos</div>
+    </div>
+</div>
+<div class="footer">
+    <div>
+        <h4>Ajuda</h4>
+        <a href="#">Deposito</a>
+        <a href="#">Faq UniBet69</a>
+        <a href="#">Contate-nos</a>
+        <a href="#">Jogo Responsável</a>
+        <a href="#">Pagamentos</a>
+        <a href="#">Regras</a>
+    </div>
+    <div>
+        <h4>Estatísticas</h4>
+        <a href="#">Futebol</a>
+        <a href="#">NBA</a>
+        <a href="#">NFL</a>
+        <a href="#">NHL</a>
+        <a href="#">F1</a>
+    </div>
+    <div>
+        <h4>Resultados</h4>
+        <a href="#">Resultados Ao-Vivo</a>
+        <a href="#">Resultados</a>
+    </div>
+</div>
+</body>
+</html>
