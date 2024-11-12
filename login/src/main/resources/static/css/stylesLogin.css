@@ -1,0 +1,84 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .header {
+            background-color: #004d00;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .header a:hover {
+            background-color: #003300;
+        }
+        .header .active {
+            background-color: #333333;
+        }
+        .header .right {
+            float: right;
+            margin-right: 20px;
+        }
+        .header .right a {
+            background-color: #333333;
+        }
+        .main-content {
+            text-align: center;
+            padding: 100px 0;
+        }
+        .main-content h1 {
+            color: #086022;
+            font-size: 48px;
+            text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7); /* Sombra */
+        }
+        .login-box {
+            background-color: #333333;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .login-box input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #004d00;
+            color: white;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #004d00;
+            color: white;
+            font-size: 16px;
+        }
+        .footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #333333;
+}
+.footer div {
+    text-align: left;
+}
+.footer h4 {
+    margin-bottom: 10px;
+}
+.footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
